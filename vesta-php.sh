@@ -9,9 +9,9 @@ exit 2
 fi
 # fix php 7 version detection...
 fixit () {
-curl -s https://raw.githubusercontent.com/Skamasle/sk-php-selector/master/sk-php${1}-centos.sh > /usr/local/vesta/data/templates/web/httpd/sk-php${1}.sh
-ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.stpl /usr/local/vesta/data/templates/web/httpd/sk-php${1}.stpl
-ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.tpl /usr/local/vesta/data/templates/web/httpd/sk-php${1}.tpl 
+curl -s https://raw.githubusercontent.com/Skamasle/sk-php-selector/master/sk-php${1}-centos.sh > /usr/local/vesta/data/templates/web/httpd/Vesta-PHP${1}.sh
+ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.stpl /usr/local/vesta/data/templates/web/httpd/Vesta-PHP${1}.stpl
+ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.tpl /usr/local/vesta/data/templates/web/httpd/Vesta-PHP${1}.tpl 
 if [ -e /etc/opt/remi/php${1}/php.ini ]; then
     ln -s /etc/opt/remi/php${1}/php.ini /etc/php${1}.ini
     ln -s  /etc/opt/remi/php${1}/php.d /etc/php${1}.d
@@ -196,7 +196,7 @@ tput sgr0
 done
 echo "################################"
 echo "Aditional PHP versión installed!"
-echo "More info on skamasle.com or forum.vestacp.com or follwme in twiter @skamasle"
+echo "ALL NOW CONFIGURED TO CODE"
 echo "################################"
 		fi
 else
