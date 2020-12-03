@@ -5,4 +5,4 @@ bash vst-install.sh --nginx no --apache yes --phpfpm no --named yes --remi yes -
 
 #Run PHP Modified
 curl -O https://raw.githubusercontent.com/gtmylab/vcp/main/vesta-php.sh
-bash vesta-php php56
+bash vesta-php.sh php56
