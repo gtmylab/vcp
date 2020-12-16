@@ -97,7 +97,7 @@ fi
 
 function phpinstall56 () {
 ver=5.6
-if [ $actual = $ver ];then
+if [ "$actual" = "$ver" ];then
 echo "Skip php 5.6 actually installed"
 else
 tput setaf 2
@@ -110,7 +110,7 @@ fi
 }
 function phpinstall55 () {
 ver=5.5
-if [ $actual = $ver ];then
+if [ "$actual" = "$ver" ];then
 echo "Skip php 5.5 actually installed"
 else
 tput setaf 2
