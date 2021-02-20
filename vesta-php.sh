@@ -1,6 +1,8 @@
 #!/bin/bash
 # Modified from Skamasle PHP SELECTOR for vesta
 # Run at your risk.
+wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+rpm -Uvh remi-release-7.rpm
 sistema=$(grep -o "[0-9]" /etc/redhat-release |head -n1)
 sklog=/var/log/skphp.log
 if [ ! -e /etc/yum.repos.d/remi.repo ]; then
